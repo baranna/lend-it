@@ -1,0 +1,46 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+lend-it-frontend/dist
+lend-it-frontend/tmp
+lend-it-frontend/out-tsc
+# Only exists if Bazel was run
+lend-it-frontend/bazel-out
+
+# dependencies
+lend-it-frontend/node_modules
+
+# profiling files
+lend-it-frontendchrome-profiler-events*.json
+lend-it-frontendspeed-measure-plugin*.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+lend-it-frontend/.sass-cache
+lend-it-frontend/connect.lock
+lend-it-frontend/coverage
+lend-it-frontend/libpeerconnection.log
+lend-it-frontendnpm-debug.log
+lend-it-frontendyarn-error.log
+lend-it-frontendtestem.log
+lend-it-frontend/typings
+
+# System Files
+lend-it-frontend/.DS_Store
+lend-it-frontend/Thumbs.db
