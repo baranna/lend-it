@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DeviceListComponent } from './device-list.component';
+import { DeviceListComponent } from './user-device-list.component';
 
 describe('DeviceListComponent', () => {
   let component: DeviceListComponent;
