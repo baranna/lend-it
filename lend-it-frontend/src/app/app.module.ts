@@ -1,20 +1,23 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
+import './core/mock/mock-server';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+	declarations: [
+		AppComponent,
+	],
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
 		CoreModule,
+		HttpClientModule,
 	],
-  providers: [],
-  bootstrap: [AppComponent]
+	providers: [],
+	bootstrap: [ AppComponent ],
 })
-export class AppModule { }
+export class AppModule {
+}
