@@ -1,15 +1,16 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
 import { DeviceRoutingModule } from './device-routing.module';
-import { DeviceListComponent } from './device-list/device-list.component';
-
+import { OwnerDeviceListComponent } from './owner-device-list/owner-device-list.component';
+import { UserDeviceListComponent } from './user-device-list/user-device-list.component';
 
 @NgModule({
-  declarations: [DeviceListComponent],
-  imports: [
-    CommonModule,
-    DeviceRoutingModule
-  ]
+	declarations: [ UserDeviceListComponent, OwnerDeviceListComponent ],
+	imports: [
+		CommonModule,
+		DeviceRoutingModule,
+	],
 })
-export class DeviceModule { }
+export class DeviceModule {
+}
