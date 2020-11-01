@@ -1,0 +1,46 @@
+---
+spring.profiles.active: local
+---
+spring:
+  application:
+    name: Lend-it
+  profiles: generic
+  jpa:
+    show-sql: false
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
+        format_sql: true
+    hibernate:
+      ddl-auto: "none"
+    generate-ddl: false
+server:
+  port: 8080
+  servlet:
+    context-path: "/lend-it"
+logging:
+  level:
+    hu.bme: DEBUG
+    root: INFO
+
+---
+# ------------------------------------------=== LOCAL ===------------------------------------------
+spring.profiles.include:
+  - generic
+spring:
+  profiles: local
+  liquibase:
+    enabled: true
+    change-log: "classpath:db/db-changelog-master.xml"
+    user: "lendit"
+    password: "lendit"
+  datasource:
+    username: lendit
+    password: lendit
+    url: jdbc:postgresql://localhost:5432/lendit
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    com.hbo: DEBUG
+    root: INFO
+---
