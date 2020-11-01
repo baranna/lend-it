@@ -1,1 +1,21 @@
-<p>owner-device-list works!</p>
+<h2 class="title has-text-centered is-4 m-2 mt-5 mb-5">Device status overview</h2>
+<div class="is-flex is-justify-content-center">
+	<table class="table is-flex-grow-1 is-striped is-hoverable">
+		<thead>
+		<tr>
+            <th class="is-primary">ID No.</th>
+            <th class="is-primary">Device name</th>
+			<th class="is-primary">Category</th>
+			<th class="is-primary">Status</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr *ngFor="let device of devices">
+            <td>{{device.id}}</td>
+            <td class="has-text-weight-semibold">{{device.name}}</td>
+			<td class="is-uppercase has-text-weight-light">{{device.category}}</td>
+			<td>{{device.status}}</td>
+		</tr>
+		</tbody>
+	</table>
+</div>

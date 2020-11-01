@@ -1,6 +1,6 @@
 export enum DeviceStatusType {
-	Lost,
-	NotReturned,
-	OutOfOrder,
-	Available
+	Lost = "Lost",
+	NotReturned = "Not returned",
+	OutOfOrder = "Out of order",
+	Available = "Available"
 }

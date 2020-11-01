@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import * as _ from 'lodash';
+import { DeviceApiService } from '../device-api.service';
+import { OwnerDeviceDto } from '../model/OwnerDeviceDto';
 
 @Component({
   selector: 'app-owner-device-list',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OwnerDeviceListComponent implements OnInit {
 
-  constructor() { }
+  devices: OwnerDeviceDto[];
 
-  ngOnInit(): void {
-  }
+	constructor(private api: DeviceApiService) {
+	}
+
+	ngOnInit(): void {
+    this.api.getDevicesForOwner().subscribe(res => this.devices = _.sortBy(res, 'status'));
+	}
 
 }
