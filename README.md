@@ -3,6 +3,11 @@ Agilis szoftverfejlesztés házi feladat
 
 A LendIT egy olyan alkalmazás mely lehetővé teszi elektronikus eszközök bérlését, foglalását, illetve nyilvántartását. Az alkalmazás egy webes klienssel és egy szerver oldallal rendelkezik. A projekt célja a nyilvántartási és bérlési folyamat adminisztrációjának egyszerűsítésére.
 
+Megvalósítandó user story-k:
+* Felhasználóként szeretném látni, hogy milyen eszközök elérhetők számomra és mennyibe kerül azok bérlése.
+* Tulajdonosként szeretném látni az elveszett/vissza nem hozott/elromlott eszközök listáját.
+* Felhasználóként szeretném, ha az elektronikai eszközök termékkategóriánként csoportosítva kerülnének felsorolásra.
+
 ## lend-it-frontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
