@@ -1,0 +1,23 @@
+version: "3.7"
+
+services:
+  postgres:
+    container_name: lend-it-postgres
+    image: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: lendit
+      POSTGRES_USER: lendit
+      POSTGRES_PASSWORD: lendit
+    networks:
+      - lenditnet
+    ports:
+      - $SERVICES_DB_PORT:5432
+
+networks:
+  lenditnet:
+
+volumes:
+  postgres_data:
+    driver: local

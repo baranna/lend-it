@@ -1,0 +1,313 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.8.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+    <changeSet author="bogim (generated)" id="1604255498944-2">
+        <insert tableName="category">
+            <column name="id" valueNumeric="1"/>
+            <column name="name" value="IT"/>
+        </insert>
+        <insert tableName="category">
+            <column name="id" valueNumeric="2"/>
+            <column name="name" value="CLEANING"/>
+        </insert>
+        <insert tableName="category">
+            <column name="id" valueNumeric="3"/>
+            <column name="name" value="KITCHEN"/>
+        </insert>
+    </changeSet>
+    <changeSet author="bogim (generated)" id="1604255498944-1">
+        <insert tableName="device">
+            <column name="id" valueNumeric="4"/>
+            <column name="name" value="Washing machine"/>
+            <column name="category" valueNumeric="2"/>
+            <column name="price" valueNumeric="140"/>
+            <column name="available"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="12"/>
+            <column name="name" value="Washing machine"/>
+            <column name="category" valueNumeric="2"/>
+            <column name="price" valueNumeric="140"/>
+            <column name="available" valueBoolean="false"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="13"/>
+            <column name="name" value="Washing machine"/>
+            <column name="category" valueNumeric="2"/>
+            <column name="price" valueNumeric="140"/>
+            <column name="available" valueBoolean="false"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="5"/>
+            <column name="name" value="Stove"/>
+            <column name="category" valueNumeric="3"/>
+            <column name="price" valueNumeric="400"/>
+            <column name="available"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="6"/>
+            <column name="name" value="Optical mouse"/>
+            <column name="category" valueNumeric="1"/>
+            <column name="price" valueNumeric="20"/>
+            <column name="available" valueBoolean="false"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="7"/>
+            <column name="name" value="Kitchen scale"/>
+            <column name="category" valueNumeric="3"/>
+            <column name="price" valueNumeric="12"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="8"/>
+            <column name="name" value="Kitchen scale"/>
+            <column name="category" valueNumeric="3"/>
+            <column name="price" valueNumeric="12"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="9"/>
+            <column name="name" value="Kitchen scale"/>
+            <column name="category" valueNumeric="3"/>
+            <column name="price" valueNumeric="12"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="10"/>
+            <column name="name" value="Kitchen scale"/>
+            <column name="category" valueNumeric="3"/>
+            <column name="price" valueNumeric="12"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="11"/>
+            <column name="name" value="Kitchen scale"/>
+            <column name="category" valueNumeric="3"/>
+            <column name="price" valueNumeric="12"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="2"/>
+            <column name="name" value="Headset"/>
+            <column name="category" valueNumeric="1"/>
+            <column name="price" valueNumeric="20"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="3"/>
+            <column name="name" value="Headset"/>
+            <column name="category" valueNumeric="1"/>
+            <column name="price" valueNumeric="20"/>
+            <column name="available" valueBoolean="false"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="112"/>
+            <column name="name" value="Optical mouse"/>
+            <column name="category" valueNumeric="1"/>
+            <column name="price" valueNumeric="20"/>
+            <column name="available" valueBoolean="false"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="113"/>
+            <column name="name" value="Optical mouse"/>
+            <column name="category" valueNumeric="1"/>
+            <column name="price" valueNumeric="20"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="114"/>
+            <column name="name" value="Optical mouse"/>
+            <column name="category" valueNumeric="1"/>
+            <column name="price" valueNumeric="20"/>
+            <column name="available" valueBoolean="false"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="115"/>
+            <column name="name" value="Optical mouse"/>
+            <column name="category" valueNumeric="1"/>
+            <column name="price" valueNumeric="20"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="116"/>
+            <column name="name" value="Optical mouse"/>
+            <column name="category" valueNumeric="1"/>
+            <column name="price" valueNumeric="20"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="104"/>
+            <column name="name" value="Headset"/>
+            <column name="category" valueNumeric="1"/>
+            <column name="price" valueNumeric="20"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="105"/>
+            <column name="name" value="Headset"/>
+            <column name="category" valueNumeric="1"/>
+            <column name="price" valueNumeric="20"/>
+            <column name="available" valueBoolean="false"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="106"/>
+            <column name="name" value="Headset"/>
+            <column name="category" valueNumeric="1"/>
+            <column name="price" valueNumeric="20"/>
+            <column name="available" valueBoolean="false"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="107"/>
+            <column name="name" value="Headset"/>
+            <column name="category" valueNumeric="1"/>
+            <column name="price" valueNumeric="20"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="108"/>
+            <column name="name" value="Headset"/>
+            <column name="category" valueNumeric="1"/>
+            <column name="price" valueNumeric="20"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="109"/>
+            <column name="name" value="Headset"/>
+            <column name="category" valueNumeric="1"/>
+            <column name="price" valueNumeric="20"/>
+            <column name="available" valueBoolean="false"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="117"/>
+            <column name="name" value="Kitchen scale"/>
+            <column name="category" valueNumeric="3"/>
+            <column name="price" valueNumeric="12"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="118"/>
+            <column name="name" value="Kitchen scale"/>
+            <column name="category" valueNumeric="3"/>
+            <column name="price" valueNumeric="12"/>
+            <column name="available" valueBoolean="false"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="119"/>
+            <column name="name" value="Kitchen scale"/>
+            <column name="category" valueNumeric="3"/>
+            <column name="price" valueNumeric="12"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="120"/>
+            <column name="name" value="Kitchen scale"/>
+            <column name="category" valueNumeric="3"/>
+            <column name="price" valueNumeric="12"/>
+            <column name="available" valueBoolean="false"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="121"/>
+            <column name="name" value="Kitchen scale"/>
+            <column name="category" valueNumeric="3"/>
+            <column name="price" valueNumeric="12"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="122"/>
+            <column name="name" value="Kitchen scale"/>
+            <column name="category" valueNumeric="3"/>
+            <column name="price" valueNumeric="12"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="123"/>
+            <column name="name" value="Kitchen scale"/>
+            <column name="category" valueNumeric="3"/>
+            <column name="price" valueNumeric="12"/>
+            <column name="available" valueBoolean="false"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="124"/>
+            <column name="name" value="Waching machine"/>
+            <column name="category" valueNumeric="2"/>
+            <column name="price" valueNumeric="140"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="125"/>
+            <column name="name" value="Waching machine"/>
+            <column name="category" valueNumeric="2"/>
+            <column name="price" valueNumeric="140"/>
+            <column name="available" valueBoolean="false"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="126"/>
+            <column name="name" value="Waching machine"/>
+            <column name="category" valueNumeric="2"/>
+            <column name="price" valueNumeric="140"/>
+            <column name="available" valueBoolean="false"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="127"/>
+            <column name="name" value="Waching machine"/>
+            <column name="category" valueNumeric="2"/>
+            <column name="price" valueNumeric="140"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="128"/>
+            <column name="name" value="Waching machine"/>
+            <column name="category" valueNumeric="2"/>
+            <column name="price" valueNumeric="140"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="129"/>
+            <column name="name" value="Vacuum cleaner&#13;&#10;"/>
+            <column name="category" valueNumeric="2"/>
+            <column name="price" valueNumeric="60"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="130"/>
+            <column name="name" value="Vacuum cleaner&#13;&#10;"/>
+            <column name="category" valueNumeric="2"/>
+            <column name="price" valueNumeric="60"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="131"/>
+            <column name="name" value="Vacuum cleaner&#13;&#10;"/>
+            <column name="category" valueNumeric="2"/>
+            <column name="price" valueNumeric="60"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="132"/>
+            <column name="name" value="Vacuum cleaner&#13;&#10;"/>
+            <column name="category" valueNumeric="2"/>
+            <column name="price" valueNumeric="60"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="133"/>
+            <column name="name" value="Vacuum cleaner&#13;&#10;"/>
+            <column name="category" valueNumeric="2"/>
+            <column name="price" valueNumeric="60"/>
+            <column name="available" valueBoolean="false"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="134"/>
+            <column name="name" value="Vacuum cleaner&#13;&#10;"/>
+            <column name="category" valueNumeric="2"/>
+            <column name="price" valueNumeric="60"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+        <insert tableName="device">
+            <column name="id" valueNumeric="1"/>
+            <column name="name" value="Optical mouse"/>
+            <column name="category" valueNumeric="1"/>
+            <column name="price" valueNumeric="20"/>
+            <column name="available" valueBoolean="true"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,38 @@
+version: "3.7"
+
+services:
+  cm-app-service:
+    container_name: lend-it
+    image: lend-it
+    build:
+      context: ..
+      dockerfile: ./Dockerfile
+      args:
+        execution_env: $EXEC_ENV
+    networks:
+      - lenditnet
+    ports:
+      - $SERVICES_PORT:8080
+    depends_on:
+      - postgres
+
+  postgres:
+    container_name: lend-it-postgres
+    image: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: lendit
+      POSTGRES_USER: lendit
+      POSTGRES_PASSWORD: lendit
+    networks:
+      - lenditnet
+    ports:
+      - $SERVICES_DB_PORT:5432
+
+networks:
+  lenditnet:
+
+volumes:
+  postgres_data:
+    driver: local
