@@ -1,6 +1,8 @@
 package hu.bme.lendit.rest;
 
 import hu.bme.lendit.rest.model.Device;
+import hu.bme.lendit.rest.model.OwnerDevice;
+import hu.bme.lendit.rest.model.UserDevice;
 import hu.bme.lendit.service.DeviceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,5 +24,15 @@ public class DeviceController {
     public List<Device> getAllDevice(){
         return deviceService.getAllDevice();
     }
+    
+    @GetMapping("/device/owner")
+	public List<OwnerDevice> getAvailableDevices(){
+		return deviceService.getAvailableDevices();
+	}
+    
+    @GetMapping("/device/user")
+	public List<UserDevice> getAllDevices(){
+		return deviceService.getAllDevices();
+	}
 
 }

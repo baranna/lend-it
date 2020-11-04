@@ -1,12 +1,7 @@
 package hu.bme.lendit.rest.model;
 
 import java.io.Serializable;
-import java.util.HashMap;
-import java.util.Map;
 
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -16,6 +11,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+	    "id",
         "name",
         "price",
         "available",
@@ -23,6 +19,8 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 })
 public class Device implements Serializable {
 
+	@JsonProperty("id")
+    private long id;
     @JsonProperty("name")
     private String name;
     @JsonProperty("price")
@@ -34,6 +32,16 @@ public class Device implements Serializable {
 
     private final static long serialVersionUID = -6887785896865262380L;
 
+    @JsonProperty("id")
+    public long getId() {
+        return id;
+    }
+
+    @JsonProperty("id")
+    public void setId(long id) {
+        this.id = id;
+    }
+    
     @JsonProperty("name")
     public String getName() {
         return name;
@@ -77,12 +85,12 @@ public class Device implements Serializable {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("name", name).append("price", price).append("available", available).append("category", category).toString();
+        return new ToStringBuilder(this).append("id", id).append("name", name).append("price", price).append("available", available).append("category", category).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(name).append(available).append(category).append(price).toHashCode();
+        return new HashCodeBuilder().append(id).append(name).append(available).append(category).append(price).toHashCode();
     }
 
     @Override
@@ -94,7 +102,7 @@ public class Device implements Serializable {
             return false;
         }
         Device rhs = ((Device) other);
-        return new EqualsBuilder().append(name, rhs.name).append(available, rhs.available).append(category, rhs.category).append(price, rhs.price).isEquals();
+        return new EqualsBuilder().append(id, rhs.id).append(name, rhs.name).append(available, rhs.available).append(category, rhs.category).append(price, rhs.price).isEquals();
     }
 
 }

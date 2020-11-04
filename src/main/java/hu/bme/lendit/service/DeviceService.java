@@ -3,6 +3,9 @@ package hu.bme.lendit.service;
 import hu.bme.lendit.database.entity.DeviceEntity;
 import hu.bme.lendit.database.repository.DeviceRepository;
 import hu.bme.lendit.rest.model.Device;
+import hu.bme.lendit.rest.model.OwnerDevice;
+import hu.bme.lendit.rest.model.UserDevice;
+
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,5 +32,18 @@ public class DeviceService {
                 .map(device -> modelMapper.map(device,Device.class))
                 .collect(Collectors.toList());
     }
+    
+    public List<OwnerDevice> getAvailableDevices(){
+		
+        List<OwnerDevice> ownerDevices = deviceRepository.findAvailableDevices();
 
+        return  ownerDevices;
+    }
+
+    public List<UserDevice> getAllDevices(){
+        List<UserDevice> userDevices = deviceRepository.findAllDevices();
+
+        return  userDevices;
+    }
+    
 }
