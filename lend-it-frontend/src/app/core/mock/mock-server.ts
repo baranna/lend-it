@@ -1,6 +1,6 @@
 import { createServer } from 'miragejs';
-import { OwnerDeviceDto } from '../../device/model/OwnerDeviceDto';
-import { UserDeviceDto } from '../../device/model/UserDeviceDto';
+import { OwnerDeviceDto } from '../model/OwnerDeviceDto';
+import { UserDeviceDto } from '../model/UserDeviceDto';
 import {
 	ownerDeviceMock1,
 	ownerDeviceMock2,

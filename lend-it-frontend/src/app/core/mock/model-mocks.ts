@@ -1,6 +1,6 @@
-import { DeviceStatusType } from '../../device/model/DeviceStatusType';
-import { OwnerDeviceDto } from '../../device/model/OwnerDeviceDto';
-import { UserDeviceDto } from '../../device/model/UserDeviceDto';
+import { DeviceStatusType } from '../model/DeviceStatusType';
+import { OwnerDeviceDto } from '../model/OwnerDeviceDto';
+import { UserDeviceDto } from '../model/UserDeviceDto';
 
 export const userDeviceMock1 = (): UserDeviceDto => {
 	return {

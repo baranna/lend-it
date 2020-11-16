@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as _ from 'lodash';
 import { DeviceApiService } from '../device-api.service';
-import { UserDeviceDto } from '../model/UserDeviceDto';
+import { UserDeviceDto } from '../../core/model/UserDeviceDto';
 
 @Component({
 	selector: 'app-user-device-list',

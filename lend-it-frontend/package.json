@@ -22,6 +22,7 @@
     "@fortawesome/angular-fontawesome": "^0.7.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@ngneat/spectator": "^6.1.1",
     "bulma": "^0.9.1",
     "lodash": "^4.17.20",
     "miragejs": "^0.1.41",

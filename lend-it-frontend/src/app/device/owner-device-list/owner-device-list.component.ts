@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as _ from 'lodash';
 import { DeviceApiService } from '../device-api.service';
-import { OwnerDeviceDto } from '../model/OwnerDeviceDto';
+import { OwnerDeviceDto } from '../../core/model/OwnerDeviceDto';
 
 @Component({
   selector: 'app-owner-device-list',
