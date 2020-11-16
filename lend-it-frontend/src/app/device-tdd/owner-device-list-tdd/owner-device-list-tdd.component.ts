@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { OwnerDeviceDto } from 'src/app/core/model/OwnerDeviceDto';
+import { DeviceApiTddService } from '../device-api-tdd.service';
 
 @Component({
   selector: 'app-owner-device-list-tdd',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OwnerDeviceListTddComponent implements OnInit {
 
-  constructor() { }
+  devices: OwnerDeviceDto[];
 
-  ngOnInit(): void {
-  }
+	constructor(private api: DeviceApiTddService) {
+	}
+
+	ngOnInit(): void {
+		this.api.getDevicesForOwner().subscribe(res => this.devices = res);
+	}
 
 }
