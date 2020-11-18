@@ -33,15 +33,15 @@ public class DeviceService {
                 .collect(Collectors.toList());
     }
     
-    public List<OwnerDevice> getAvailableDevices(){
+    public List<OwnerDevice> getAllDevices(){
 		
-        List<OwnerDevice> ownerDevices = deviceRepository.findAvailableDevices();
+        List<OwnerDevice> ownerDevices = deviceRepository.findAllDevices();
 
         return  ownerDevices;
     }
 
-    public List<UserDevice> getAllDevices(){
-        List<UserDevice> userDevices = deviceRepository.findAllDevices();
+    public List<UserDevice> getAvailableDevices(){
+        List<UserDevice> userDevices = deviceRepository.findAvailableDevices();
 
         return  userDevices;
     }

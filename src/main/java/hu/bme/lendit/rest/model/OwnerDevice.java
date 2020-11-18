@@ -64,12 +64,12 @@ public class OwnerDevice {
     }
     
     @JsonProperty("available")
-    public Boolean getPrice() {
+    public Boolean getAvailable() {
         return available;
     }
 
     @JsonProperty("available")
-    public void setPrice(Boolean available) {
+    public void setAvailable(Boolean available) {
         this.available = available;
     }
 

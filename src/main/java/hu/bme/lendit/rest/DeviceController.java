@@ -26,13 +26,13 @@ public class DeviceController {
     }
     
     @GetMapping("/device/owner")
-	public List<OwnerDevice> getAvailableDevices(){
-		return deviceService.getAvailableDevices();
+	public List<OwnerDevice> getAllDevices(){
+		return deviceService.getAllDevices();
 	}
     
     @GetMapping("/device/user")
-	public List<UserDevice> getAllDevices(){
-		return deviceService.getAllDevices();
+	public List<UserDevice> getAvailableDevices(){
+		return deviceService.getAvailableDevices();
 	}
 
 }
