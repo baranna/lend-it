@@ -40,8 +40,8 @@ public class DeviceService {
         return  ownerDevices;
     }
 
-    public List<UserDevice> getAvailableDevices(){
-        List<UserDevice> userDevices = deviceRepository.findAvailableDevices();
+    public List<UserDevice> getAllAvailableDevices(){
+        List<UserDevice> userDevices = deviceRepository.findAllAvailableDevices();
 
         return  userDevices;
     }

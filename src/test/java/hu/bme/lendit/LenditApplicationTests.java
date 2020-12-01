@@ -73,14 +73,14 @@ public class LenditApplicationTests {
 	
 	@Test
 	void assertDeviceRepositoryAvailableDevicesNotNull() {
-		List<UserDevice> allDevices = deviceRepository.findAvailableDevices();
+		List<UserDevice> allDevices = deviceRepository.findAllAvailableDevices();
 		
 		assertNotNull(allDevices);
 	}
 	
 	@Test
 	void assertDeviceRepositoryAvailableDevices() {
-		List<UserDevice> allDevices = deviceRepository.findAvailableDevices();
+		List<UserDevice> allDevices = deviceRepository.findAllAvailableDevices();
 		UserDevice oneUserDevice = allDevices.get(6);
 		String oneUserDeviceData = "id=" + oneUserDevice.getId().toString() + ","
 				+ "name=" + oneUserDevice.getName() + ","

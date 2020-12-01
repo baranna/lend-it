@@ -31,8 +31,8 @@ public class DeviceController {
 	}
     
     @GetMapping("/device/user")
-	public List<UserDevice> getAvailableDevices(){
-		return deviceService.getAvailableDevices();
+	public List<UserDevice> getAllAvailableDevices(){
+		return deviceService.getAllAvailableDevices();
 	}
 
 }

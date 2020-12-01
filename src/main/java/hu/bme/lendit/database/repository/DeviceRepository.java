@@ -18,7 +18,7 @@ public interface DeviceRepository extends JpaRepository<DeviceEntity,Long> {
 	
 	//Native:SELECT d.id, d.name, c.name, d.price FROM device d LEFT JOIN category c ON d.category=c.id WHERE d.available=TRUE
 	@Query("SELECT new hu.bme.lendit.rest.model.UserDevice(d.id, d.name, c.name, d.price) FROM DeviceEntity d LEFT JOIN d.category c ON d.category=c.id WHERE d.available=TRUE")
-	List<UserDevice> findAvailableDevices();
+	List<UserDevice> findAllAvailableDevices();
 	
 	//Native:SELECT d.id, d.name, c.name, d.available FROM device d LEFT JOIN category c ON d.category=c.id
     @Query("SELECT new hu.bme.lendit.rest.model.OwnerDevice(d.id, d.name, c.name, d.available) FROM DeviceEntity d LEFT JOIN d.category c ON d.category=c.id")
